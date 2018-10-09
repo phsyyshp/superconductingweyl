@@ -1,0 +1,66 @@
+
+
+\documentclass[]{article}
+
+%opening
+\title{Calculation of conductance in a system with a single Weyl node}
+\author{Oguz Turker}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\section{Commutation rules}
+The fermionic operators that creates(anhilliates) particles in a given band can be written in terms of slave operators as;
+\begin{equation}
+a_{k_{\pm}}=f_{k_{\pm}}\tau_k^x.
+\end{equation}
+Operators $a$ and $f$ obey usual fermionic anti-commutation relations which are given as,
+ \begin{equation}
+\{f_k,f^\dagger_{k+q}\}=\delta_{0,q}, \label{eq:fcom}
+ \end{equation} 
+ and,
+ \begin{equation}
+ \{a_k,a^\dagger_{k+q}\}=\delta_{0,q}\label{eq: acom},
+  \end{equation} 
+  if we substitute eq \ref{eq:fcom} to eq \ref{eq: acom} we have 
+  \begin{equation}
+  \tau_{k}f_{k+q}f^\dagger_{k}\tau_{k+q}-f_{k+q}\tau_{k+q}  \tau_{k}f^\dagger_{k}=-\delta_{0,q}+\tau_k\delta_{0,q}\tau_{k+q}
+   \end{equation} 
+   \section{Current operator}
+   Since we are working in momentum space we will write the current operator and the continuity equation in momentum space. The Fourier transform of the current operator  is;
+   \begin{equation}
+   J(r)=\frac{1}{V}\int dq J(q)e^{iqr} 
+   \end{equation}
+   and the Fourier transform of the density operator is 
+   \begin{equation}
+      \rho(r)=\frac{1}{V}\sum_{q} dq \rho(q)e^{iqr},
+   \end{equation}
+   where 
+   \begin{equation}
+   \rho(q)=\sum_{k}a^{\dagger}_k a_{k+q} \label{eq:dq}.
+   \end{equation}
+   We can find the continuity equation for a given $q$ as 
+   \begin{equation}
+      \dot{\rho}(q)=-iqJ(q) \label{eq: ceq}
+    \end{equation}
+    if we use  Heisenberg's equation of motion, we have
+    \begin{equation}
+    [H,\rho_q](t)=q J_q.
+    \end{equation}
+Now let us  write   eq \ref{eq:dq} in terms of slave operators 
+    \begin{equation}
+    \rho_q=\sum_{k}\tau_{k}f^\dagger_{k}f_{k+q}\tau_{k+q}.
+    \end{equation}
+    Our hypothesis is current is carried by only $f$ particle. We want to show that the current operator consists of only $f$ and $f^\dagger$ operators.
+     If we use eq\ref{eq:fcom} we find that 
+         \begin{equation}
+         \rho_0=\sum_{k}f^\dagger_{k}f_{k}
+         \end{equation}
+         but, $\rho_0$ does not contribute to the current which is clearly seen  by eq\ref{eq: ceq}. The $\rho_{q\neq0}$ cannot be written only in terms of  $f$ operators. For now it seems to be that this slave spin approach does not make the problem easier, nor the $J$ can be written in terms of solely $f$'s.
+    \end{document}
+    
